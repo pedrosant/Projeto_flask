@@ -2,11 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/estiloMenu.css') }}">
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    
 </head>
 <body>
-    <h1>Logado</h1>
+
+    
+    <p><h1>STP</h1></p>
+    <p><h2>Sistema de transporte de passageiros</h2></p>
+    
+    <nav>
+        <ul class="menu">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Cadastros</a>
+                 <ul>
+                    <li><a href="#">Usuário</a></li>
+                    <li><a href="#">Passageiro</a></li>
+                    <li><a href="#">Motoristas</a></li>
+                    <li><a href="#">Veículos</a></li>
+                 </ul>                 
+             </li>
+             <li>
+                <a href="#">Registros e Relatório</a>
+                <ul>
+                    <li><a href="#">Registros de Transportes</a></li>
+                    <li><a href="#">Relatórios Financeiro</a></li>                    
+                 </ul>  
+             </li>
+        </ul>
+
+    </nav>
 </body>
 </html>

@@ -1,0 +1,10 @@
+1º Abra a pasta onde se encontra o arquivo main.py
+2º Clik na barra onde se encontra o caminho da pasta apague o caminho e digite: cmd
+3º Com o cmd aberto digite os seguintes comandos: 
+
+Primeiro Comando:
+	set FLASK_ENV = development
+Segundo Comando:
+	set FLASK_APP = main.py
+Terceiro Comando: 
+	python -m flask run
