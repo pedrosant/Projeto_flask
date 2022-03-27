@@ -13,30 +13,32 @@
 <body>
     
     
+    <div class="grade-login"></div>
 
     <div class="container my-5"> 
         
         <form action="http://127.0.0.1:5000/" method="POST">
             <p><img src = "{{ url_for('static', filename='img/img_onibus.png') }}" alt="" ></p>
-
-            <label for = "id_user"> Usuário:</label>
-            <h1></h1>
-            <p><input type = "text" id= "id_user" name= "id_user"> </p>          
             
-            <label for = "id_user">Senha:</label>
-            <h1></h1>
-            <p><input type = "text" id= "id_password" name= "id_password"></p>
+            <div class="caixa-login">
+                <label for = "id_user"> Usuário:</label>
+                <h1></h1>
+                <p><input type = "text" id= "id_user" name= "id_user"> </p>          
+                
+                <label for = "id_user">Senha:</label>
+                <h1></h1>
+                <p><input type = "text" id= "id_password" name= "id_password"></p>
             
             <div>
                 <p><input type = "submit" value = "    Entrar    "></p> 
             </div>
-                       
+            </div>         
         </form>
         
          
     </div>
 
-   
+    
 
 
 </body>
