@@ -4,33 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/estiloMenu.css') }}">
-    <title>Veiculos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/formCadastroVeiculo.css') }}">
+    <title>Cadastro de Veículo</title>
 </head>
 <body>
-    <p><h1>STP</h1></p>
-    <p><h2>Sistema de Transporte de Passageiros</h2></p>
-    
-    <nav>
-        <ul class="menu">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">Cadastros</a>
-                 <ul>
-                    <li><a href="#">Usuário</a></li>
-                    <li><a href="#">Passageiro</a></li>
-                    <li><a href="#">Motoristas</a></li>
-                    <li><a href="#">Veículos</a></li>
-                 </ul>                 
-             </li>
-             <li>
-                <a href="#">Registros e Relatório</a>
-                <ul>
-                    <li><a href="#">Registros de Transportes</a></li>
-                    <li><a href="#">Relatórios Financeiro</a></li>                    
-                 </ul>  
-             </li>
-        </ul>
+    <div id="form">
+        <form action="">
 
-    </nav>
+            <h2 class="title">Cadastrar Veículo</h2>
+
+            <div>
+                <label">Tipo de Transporte:</label>
+                <select name="transporte" id="transporte">
+                    <option select disable value="" >Selecione</option>
+                    <option>Carro</option>
+                    <option>Ônibus</option>
+                    <option>Van</option>
+                </select>
+            </div>
+
+            <label for="placa">Placa</label>
+            <div class="input">
+                <input id="placa" name="placa" placeholder="Placa" type="text">
+            </div>
+
+            <label for="marca">Marca</label>
+            <div class="input">
+                <input id="marca" name="marca" placeholder="Marca" type="text">
+            </div>
+
+            <label for="modelo">Modelo</label>
+            <div class="input">
+                <input id="modelo" name="modelo" placeholder="Modelo" type="text">
+            </div>
+
+            <label for="ano">Ano</label>
+            <div class="input">
+                <input id="ano" name="ano" placeholder="Ano" type="text">
+            </div>
+
+            <label for="capacidade">Capacidade de Passageiros</label>
+            <div class="input">
+                <input id="capacidade" name="capacidade" placeholder="Capacidade de Passageiros" type="text">
+            </div>
+
+            <label for="cpfmotorista">CPF do Motorista</label>
+            <div class="input">
+                <input id="cpfmotorista" name="cpfmotorista" placeholder="CPF do Motorista" type="text">
+            </div>
+
+            <div id="btn">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

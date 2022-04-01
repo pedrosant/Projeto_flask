@@ -43,3 +43,9 @@ input{
     border-end-start-radius: 8%;
     border-style: none;
 }
+
+div.divF{
+    background-color: blue;
+    margin: 10px;
+    height: 10px
+}
