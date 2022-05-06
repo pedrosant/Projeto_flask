@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/templateFormulario.css') }}">
+    <title>Login</title>
+</head>
+<body>
+    <div id="form">
+        <form action= "https://appflaskunit.herokuapp.com/logado" method="POST"></form>
+
+            <p><img src = "{{ url_for('static', filename='img/img_onibus.png') }}" alt="" ></p>
+            
+            <label for="login">Login</label>
+            <div class="input">
+                <input id="login" name="login" placeholder="Login" type="text">
+            </div>
+
+            <label for="senha">Senha</label>
+            <div class="input">
+                <input id="senha" name="senha" placeholder="Senha" type="password">
+            </div>
+
+            <div id="btn">
+                <!--<button type="submit" value="submit">Entrar</button>-->
+                <button type="submit" formaction="http://127.0.0.1:5000/logado">Entrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
